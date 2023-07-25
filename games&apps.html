@@ -1,0 +1,113 @@
+<!doctype.html>
+<html>
+<head>
+	
+    <link rel="stylesheet" href="styles.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<title>Games & Apps</title>
+	<meta charset= "utf-8">
+	<meta charset="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+
+	<div class="topnnav">
+	
+	<a href="index.html">
+	
+	 <h1>WARNERBROS</h1>
+	 
+     <ul>
+	   </a>
+	<a href="index.html">
+	
+	<li><a href ="movies.html" target="_blank">MOVIES</a></li>
+	<li><a href ="tvshows.html" target="_blank">TV SHOWS</a></li>
+	<li><a href ="games&apps.html" target="_blank">GAMES & APPS</a></li>
+	<li><a href ="collections.html" target="_blank">COLLECTIONS</a></li>
+	<li><a href ="feedback.html" target="_blank">FEEDBACK</a></li>
+	 </ul>
+	</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="Warner\Pics\30.png" style="width:100%">
+  <div class="text">Lego</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"<></div>
+  <img src="Warner\Pics\31.png" style="width:100%">
+  <div class="text">DC Universe</div>
+</div>
+
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+  
+</div>
+	 <br>
+  
+  <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+	
+
+	<h2>VIDEO GAMES</h2>
+	<div class="container"></div>
+	
+		<div class="scroll-container">
+		<img src="Warner\Pics\32.jpg" alt="Hitman 2" class="responsive" width="200" height="300">
+		<img src="Warner\Pics\33.jpg" alt="Lego" class="responsive" width="200" height="300">
+		<img src="Warner\Pics\34.jpg" alt="Scribble" class="responsive" width="200" height="300" >
+		<img src="Warner\Pics\36.jpg" alt="Shadow of War" class="responsive" width="200" height="300" >
+		<img src="Warner\Pics\37.jpg" alt="Batman Return" class="responsive" width="200" height="300" >
+		<img src="Warner\Pics\38.jpg" alt="Batman" class="responsive" width="200" height="300" >
+		
+		
+		
+	</div>
+	
+	
+	<div class="footer">
+	<a href="https://www.facebook.com/wbpictures/"class="fa fa-facebook"></a>
+	<a href="https://www.twitter.com/wbpictures/"class="fa fa-twitter"></a>
+	<a href="https://www.linkedin.com/wbpictures/"class="fa fa-linkedin"></a>
+	<a href="https://www.youtube.com/wbpictures/"class="fa fa-youtube"></a>
+	<a href="https://www.instagram.com/wbpictures/"class="fa fa-instagram"></a>
+	<a href="https://www.pinterest.com/wbpictures/"class="fa fa-pinterest"></a>
+	</div>
+	
+	
+</html>
